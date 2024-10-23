@@ -2,7 +2,11 @@ import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import HighLightText from '../components/core/HomePage/HighLightText';
-import CTAButton from './Button'
+import CTAButton from '../components/core/HomePage/Button'
+import Banner from '../assets/Images/banner.mp4';
+import CodeBlocks from '../components/core/HomePage/CodeBlocks';
+
+
 const Home = () => {
   return (
     <div>
@@ -20,7 +24,7 @@ const Home = () => {
             </div>
         </div>
         </Link>
-        <div className='text-center font-semibold text-4xl mt-7'>
+        <div className='text-center font-semibold text-4xl mt-7' >
             Empower Your future with
             <HighLightText text={"Coding Skills"}/>
         </div>
@@ -39,9 +43,46 @@ const Home = () => {
             Book a Demo
           </CTAButton>
         </div>
-        <div>
-            
+        <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
+          <video
+            className="shadow-[20px_20px_rgba(255,255,255)]"
+           muted 
+           loop
+           autoPlay
+           >
+              <source src={Banner} type='video/mp4'/>
+           </video>
         </div>
+        {/*codesection1 */}
+          <div>
+            <CodeBlocks
+            position={`lg:flex-row`}
+            heading={<div className='text-4xl font-semibold'>
+                Unlock Your 
+                <HighLightText text={"coding potential"}/>
+                with our online courses
+            </div>}
+            subheading={
+                "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
+              }
+              ctabtn1={
+                {
+                    btnText:"try it yourself",
+                    linkto:"/signup",
+                    active:true
+                }
+              }
+              ctabtn2={
+                {
+                    btnText:"learn more",
+                    linkto:"/login",
+                    active:false
+                }
+              }
+              CodeBlocks
+            />
+          </div>
+        
       </div>
 
      {}
