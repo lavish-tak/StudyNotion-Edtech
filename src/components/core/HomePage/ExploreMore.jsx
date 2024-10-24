@@ -26,10 +26,10 @@ const ExploreMore = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col">
       {/* Explore more section */}
       <div>
-        <div className="text-4xl font-semibold text-center my-10">
+        <div className="text-white text-4xl font-semibold text-center my-10">
           Unlock the
           <HighlightText text={"Power of Code"} />
           <p className="text-center text-richblack-300 text-lg font-semibold mt-1">

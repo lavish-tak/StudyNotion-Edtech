@@ -90,8 +90,10 @@ const Home = () => {
               codeblock={`<!DOCTYPE html>\n <html lang="en">\n<head>\n<title>This is myPage</title>\n</head>\n<body>\n<h1><a href="/">Header</a></h1>\n<nav> <a href="/one">One</a> <a href="/two">Two</a> <a href="/three">Three</a>\n</nav>\n</body>`}
               bgGradient={<div className="codeblock1 absolute"></div>}
             />
+            
           </div>
           {/*codeSection2 */}
+          
           <div>
           <CodeBlocks
             position={"lg:flex-row-reverse"}
@@ -119,10 +121,9 @@ const Home = () => {
             bgGradient={<div className="codeblock2 absolute"></div>}
           />
         </div>
+        <ExploreMore/>
         
       </div>
-
-      <ExploreMore/>
 
      {/**Section2 */}
     <div className='bg-pure-greys-5 text-richblack-700'>
