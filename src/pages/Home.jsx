@@ -5,11 +5,13 @@ import HighLightText from '../components/core/HomePage/HighLightText';
 import CTAButton from '../components/core/HomePage/Button'
 import Banner from '../assets/Images/banner.mp4';
 import CodeBlocks from '../components/core/HomePage/CodeBlocks';
+import TimelineSection from '../components/core/HomePage/TimelineSection';
 
 
 const Home = () => {
   return (
     <div>
+
      {/*section1*/} 
       <div className='relative mx-auto flex flex-col w-11/12 items-center
       text-white justify-between'>
@@ -116,7 +118,62 @@ const Home = () => {
         
       </div>
 
-     {}
+     {/**Section2 */}
+    <div className='bg-pure-greys-5 text-richblack-700'>
+        <div className='homepage_bg h-[333px]'>
+          <div className='w-11/12 max-w-maxContent flex flex-col items-center gap-5 mx-auto justify-between'>
+            <div className='h-[150px]'></div>
+          <div className='flex flex-row gap-7 text-white'>
+          
+                 <CTAButton active={true} linkto={"/signup"}>
+                    <div className='flex flex-row items-center gap-2'>
+                        Explore full Catalog
+                        <FaArrowRight />
+                    </div>
+    
+                 </CTAButton>
+                 <CTAButton active={false} linkto={"/signup"}>
+                    <div>
+                        Learn More
+                    </div>
+    
+                 </CTAButton>
+            
+          </div>
+          </div>
+
+        </div>
+
+        <div className='w-11/12 mx-auto items-center flex flex-col
+         justify-between gap-7 max-w-maxContent'>
+               
+            <div className='flex flex-row gap-5 mb-10 mt-[95px]'>
+                <div className='text-4xl font-semibold w-[45%]'>
+                    Get the skills you need for a 
+                    {" "}
+                    <HighLightText text={"jobs that is in demand"}/>
+
+                </div>
+
+                <div className="flex flex-col items-start gap-10 lg:w-[40%]">
+              <div className="text-[16px]">
+                The modern StudyNotion is the dictates its own terms. Today, to
+                be a competitive specialist requires more than professional
+                skills.
+              </div>
+              <CTAButton active={true} linkto={"/signup"}>
+                <div className="">Learn More</div>
+              </CTAButton>
+                </div>
+            </div>
+            
+            <TimelineSection/>
+        </div>
+          
+          
+
+
+    </div>
 
 
 

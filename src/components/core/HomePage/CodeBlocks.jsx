@@ -4,6 +4,7 @@ import HighLightText from './HighLightText';
 import { FaArrowRight } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 
+
 const CodeBlocks = ({position,heading,subheading,ctabtn1,ctabtn2,codeblock,bgGradient,codeColor}) => {
     return (
     <div className={`flex ${position} my-20 justify-between gap-10` }>
