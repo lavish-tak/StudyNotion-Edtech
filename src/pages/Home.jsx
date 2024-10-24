@@ -6,6 +6,10 @@ import CTAButton from '../components/core/HomePage/Button'
 import Banner from '../assets/Images/banner.mp4';
 import CodeBlocks from '../components/core/HomePage/CodeBlocks';
 import TimelineSection from '../components/core/HomePage/TimelineSection';
+import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection';
+import InstructorSection from '../components/core/HomePage/InstructorSection';
+import Footer from '../components/common/Footer';
+import ExploreMore from '../components/core/HomePage/ExploreMore'
 
 
 const Home = () => {
@@ -118,6 +122,8 @@ const Home = () => {
         
       </div>
 
+      <ExploreMore/>
+
      {/**Section2 */}
     <div className='bg-pure-greys-5 text-richblack-700'>
         <div className='homepage_bg h-[333px]'>
@@ -168,6 +174,7 @@ const Home = () => {
             </div>
             
             <TimelineSection/>
+            <LearningLanguageSection/> 
         </div>
           
           
@@ -177,10 +184,19 @@ const Home = () => {
 
 
 
-     {}
+     {/**Section3 */}
+     <div className='w-11/12 flex flex-col items-center justify-between bg-richblack-900 text-white
+     gap-8 mx-auto max-w-maxContent'>
+
+        <InstructorSection/>
+
+        <h2 className='text-center text-4xl font-semibold mt-10'>Reviews from other learners</h2>
+
+     </div>
 
 
-     {}
+     {/**Footer */}
+     <Footer/>
 
     </div>
   )
