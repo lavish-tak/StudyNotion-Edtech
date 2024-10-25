@@ -126,11 +126,11 @@ const Home = () => {
       </div>
 
      {/**Section2 */}
-    <div className='bg-pure-greys-5 text-richblack-700'>
+    <div className='bg-pure-greys-5 text-richblack-700 '>
         <div className='homepage_bg h-[333px]'>
           <div className='w-11/12 max-w-maxContent flex flex-col items-center gap-5 mx-auto justify-between'>
-            <div className='h-[150px]'></div>
-          <div className='flex flex-row gap-7 text-white'>
+            <div className='h-[200px]'></div>
+          <div className='flex flex-row gap-7 text-white '>
           
                  <CTAButton active={true} linkto={"/signup"}>
                     <div className='flex flex-row items-center gap-2'>
