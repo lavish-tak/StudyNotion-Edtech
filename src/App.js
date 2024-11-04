@@ -8,7 +8,9 @@ import Signup from './pages/Signup';
 import ForgotPassword from './pages/ForgotPassword';
 import VerifyEmail from './pages/VerifyEmail';
 import About from "./pages/About"
-
+import MyProfile from './components/core/Dashboard/MyProfile';
+import Dashboard from './pages/Dashboard';
+import PrivateRoute from './components/core/Auth/PrivateRoute';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
     <Routes >
        <Route path="/" element={<Home/>} />
        <Route path="/about" element={<About />} />
+       {/* <Route path='/contact' element={<Contact/>}/> */}
        <Route
           path="login"
           element={
@@ -50,6 +53,16 @@ function App() {
           </OpenRoute>
         }
         />
+        <Route
+          element={<PrivateRoute>
+            <Dashboard/>
+          </PrivateRoute>}
+        >
+          <Route path='dashboard/my-profile' element={<MyProfile/>}/>
+          {/* <Route path='dashboard/setting' element={<Setting/>}/> */}
+
+        </Route>
+        
     </Routes>
    </div>
    </>
